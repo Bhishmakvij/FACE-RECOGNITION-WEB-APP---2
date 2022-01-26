@@ -1,0 +1,63 @@
+<html>
+
+<head>
+     <title>Face Recognition App</title>
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+                                         <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+                                                <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+                                                        <link rel="stylesheet" href="style.css">
+                                                                <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.mim.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+            <center>
+                <div class="box">
+                        <div class="content">
+                                <h1  id="om">Face Recognition App</h1>
+                        </div>
+                </div>
+                                        <br>
+                                                <br>
+                                                        <div> 
+                                                                <p style="font-weight:bolder; font-size: xx-large; color: white;">Model is trained to identify the following objects :- </p>
+                                                         </div>
+                                                         <div class="box1">
+                                                                <b class="name_of_family_member">
+                                                                        Brother
+                                                                        <hr>
+                                                                        Father
+                                                                        <hr>
+                                                                        Sister
+                                                                        <hr>
+                                                                        Mother
+                                                                        <hr>    
+                                                                </b>
+                                                                        
+                                                                </div>                                                                     
+<br><br><br><br>
+                                                              <div class="box2">  <label>Webcam View -</label>
+                                                                <div id="camera"></div></div>
+                                                                        <br><br>
+                                                                      <div class="box3">  <div id="result"></div></div>
+
+                                                                        <br><br>
+      <div class="box4"><button onclick="take_snapshot();" class="btn btn-info">Capture Image</button></div>
+      <br><br>
+     <div class="box5"> <button onclick="check();" class="btn btn-success">Identify Image</button></div>
+      <br><br>
+
+      <div class="box6"><p style="font-size: 22px;" id="Object">Object : <span id="result_object_name"></span> </p></div>
+      <br><br><br>
+      <div  class="box7"><p style="font-size: 44px;" id="Accuracy"></p>Accuracy : <span id="result_object_accuracy"></span> </p></div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
